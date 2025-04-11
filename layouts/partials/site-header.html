@@ -1,5 +1,5 @@
-<!-- {{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }} -->
-{{ $featured_image := "/images/bcanyon.jpeg" }}
+{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+<!-- {{ $featured_image := "/images/bcanyon.jpeg" }} -->
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-top" }}
